@@ -82,11 +82,11 @@ The layout is designed to prioritize clarity and reduce cognitive overload.
 
 ```mermaid
 flowchart LR
-    A[Land on Inventory] --> B[Search / Apply Filters]
-    B --> C[View Filtered Results]
-    C --> D[Select Row]
-    D --> E[Open Detail Page]
-    E --> F[Back to Inventory (State Preserved)]
+    A["Land on Inventory"] --> B["Search / Apply Filters"]
+    B --> C["View Filtered Results"]
+    C --> D["Select Row"]
+    D --> E["Open Detail Page"]
+    E --> F["Back to Inventory - State Preserved"]
 ```
 
 Important UX principle:
