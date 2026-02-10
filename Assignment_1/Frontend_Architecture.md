@@ -241,3 +241,67 @@ To keep performance optimal:
 - Keep table rows lightweight and stateless
 
 The goal is to minimize JavaScript execution in the browser.
+
+---
+
+# Folder Structure
+
+```
+src/
+│
+├── app/
+│   ├── layout.tsx                # Root layout
+│   ├── globals.css
+│
+│   ├── (auth)/                   # Auth-related routes
+│   │   ├── login/
+│   │   └── forgot-password/
+│
+│   ├── dashboard/
+│   │   ├── page.tsx              # Server Component
+│   │   ├── DashboardStats.tsx
+│   │   └── DashboardCharts.client.tsx
+│
+│   ├── inventory/
+│   │   ├── page.tsx              # Server Component
+│   │   ├── InventoryTable.client.tsx
+│   │   ├── InventoryFilters.client.tsx
+│   │   └── components/
+│   │
+│   ├── reports/
+│   │   ├── page.tsx
+│   │   └── components/
+│   │
+│   ├── details/
+│   │   └── [id]/
+│   │       └── page.tsx
+│
+├── components/                   # Reusable UI components
+│   ├── ui/
+│   ├── table/
+│   ├── charts/
+│   └── layout/
+│
+├── hooks/                        # Custom React hooks
+│   ├── useDebounce.ts
+│   ├── useTableState.ts
+│   └── usePagination.ts
+│
+├── lib/                          # Shared utilities
+│   ├── api.ts
+│   ├── fetcher.ts
+│   ├── constants.ts
+│   └── validators.ts
+│
+├── store/                        # Lightweight state management (Zustand)
+│   ├── tableStore.ts
+│   └── uiStore.ts
+│
+├── types/                        # Global TypeScript types
+│   ├── inventory.ts
+│   ├── report.ts
+│   └── api.ts
+│
+└── styles/
+    └── tokens.css
+```
