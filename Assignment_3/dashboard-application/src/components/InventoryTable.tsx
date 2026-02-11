@@ -83,7 +83,6 @@ export default function InventoryTable({ items }: Props) {
         aria-label="Inventory table"
         className="mt-4 border rounded overflow-hidden"
       >
-        {/* Header */}
         <div
           role="row"
           className="grid grid-cols-5 border-b bg-gray-100 px-4 h-12.5 items-center text-left font-semibold"
@@ -120,7 +119,6 @@ export default function InventoryTable({ items }: Props) {
           </button>
         </div>
 
-        {/* Scrollable Body */}
         {isLoading ? (
           <TableSkeleton />
         ) : displayItems.length === 0 ? (

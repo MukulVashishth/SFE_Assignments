@@ -31,7 +31,6 @@ export default function Filters({
 
   return (
     <div className="mb-4 flex items-center gap-4">
-      {/* Search */}
       <div>
         <label htmlFor="search" className="mr-2 font-medium">
           Search:
@@ -45,7 +44,6 @@ export default function Filters({
         />
       </div>
 
-      {/* Status Filter */}
       <div>
         <label htmlFor="status" className="mr-2 font-medium">
           Status:
